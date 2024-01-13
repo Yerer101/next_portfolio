@@ -21,7 +21,7 @@ export default function Home() {
               animate="show"
               exit="hidden"
             >
-              Hi I&aposm Abenezer Maregu <br />
+              Hi I&apos;m Abenezer Maregu <br />
               <span className="text-accent font-mono">
                 <TypeAnimation
                   sequence={[
@@ -49,9 +49,7 @@ export default function Home() {
               animate="show"
               exit="hidden"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-              nostrum quam reprehender vero, tenetur voluptatem nulla aut
-              aspernatur dolores ut.
+              Am a software enginner with more than 4 years experience sepcializing in web devlopment
             </motion.p>
             {/* btn */}
             <div className="flex justify-center xl:hidden relative">

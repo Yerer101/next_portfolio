@@ -140,7 +140,7 @@ const Page = () => {
               exit="hidden"
             >
               10 years agao, I began freelancing as a developer. Since then,
-              I&aposve done remote work for agencies, counsulted for startups, and
+              I&apos;ve done remote work for agencies, counsulted for startups, and
               collaborated on digital products for business and consumer use.
             </p>
             {/* counters */}
