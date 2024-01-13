@@ -21,7 +21,7 @@ export default function Home() {
               animate="show"
               exit="hidden"
             >
-              Hi I'm Abenezer Maregu <br />
+              Hi I&aposm Abenezer Maregu <br />
               <span className="text-accent font-mono">
                 <TypeAnimation
                   sequence={[
