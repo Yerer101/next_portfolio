@@ -27,25 +27,25 @@ const aboutData = [
       {
         title: "Web Development",
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
+          <FaHtml5 key="html5" />,
+          <FaCss3 key="css3" />,
+          <FaJs key="js" />,
+          <FaReact key="react" />,
+          <SiNextdotjs key="nextjs" />,
+          <SiFramer key="framer" />,
         ],
       },
       {
         title: "Data science",
-        icons: [<FaPython />, <SiApachespark />, <FaFileExcel />],
+        icons: [<FaPython key='python' />, <SiApachespark key='apache'/>, <FaFileExcel key='excel'/>],
       },
       {
         title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [<FaFigma key='figma'/>, <SiAdobexd key='adobe'/>, <SiAdobephotoshop key='adphoto' />],
       },
       {
         title: "web scraping",
-        icons: [<FaPython />],
+        icons: [<FaPython key='fapython'/>],
       },
     ],
   },
@@ -103,7 +103,7 @@ import { fadeIn } from "@/Variants";
 import CountUp from "react-countup";
 import { BsFileExcel } from "react-icons/bs";
 
-const page = () => {
+const Page = () => {
   const [itemIndex, setItemIndex] = useState(0);
   return (
     <Pagewrapper>
@@ -140,7 +140,7 @@ const page = () => {
               exit="hidden"
             >
               10 years agao, I began freelancing as a developer. Since then,
-              I've done remote work for agencies, counsulted for startups, and
+              I&aposve done remote work for agencies, counsulted for startups, and
               collaborated on digital products for business and consumer use.
             </p>
             {/* counters */}
@@ -247,4 +247,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
