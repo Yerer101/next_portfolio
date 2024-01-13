@@ -7,28 +7,40 @@ import {
   RiDribbbleLine,
   RiBehanceLine,
   RiPinterestLine,
+  RiLinkedinBoxLine,
+  RiLinkedinFill,
+  RiGithubFill,
+  RiTelegramFill,
+  RiTelegramLine,
+  RiGoogleLine,
+  RiDiscordFill,
 } from "react-icons/ri";
 const Socials = () => {
   return (
     <div className="flex items-center gap-x-5 text-lg">
-      <Link href={""} className="hover:text-accent transition-all duration-300">
-        <RiYoutubeLine />
+      <Link
+        href={"https://discord.com/channels/@me/1138909093092917249"}
+        target="_blank"
+        className="hover:text-accent transition-all duration-300"
+      >
+        <RiDiscordFill />
       </Link>
-      <Link href={""} className="hover:text-accent transition-all duration-300">
-        <RiFacebookLine />
+      <Link
+        href={"https://github.com/Drabsenior"}
+        target="_blank"
+        className="hover:text-accent transition-all duration-300"
+      >
+        <RiGithubFill />
       </Link>
-      <Link href={""} className="hover:text-accent transition-all duration-300">
-        <RiInstagramLine />
+      <Link
+        href={"https://www.linkedin.com/in/abenezer-maregu-560016236/"}
+        target="_blank"
+        className="hover:text-accent transition-all duration-300"
+      >
+        <RiLinkedinFill />
       </Link>
-      <Link href={""} className="hover:text-accent transition-all duration-300">
-        <RiDribbbleLine />
-      </Link>
-      <Link href={""} className="hover:text-accent transition-all duration-300">
-        <RiBehanceLine />
-      </Link>
-      <Link href={""} className="hover:text-accent transition-all duration-300">
-        <RiPinterestLine />
-      </Link>
+     
+      
     </div>
   );
 };

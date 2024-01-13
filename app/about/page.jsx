@@ -1,5 +1,6 @@
 "use client";
 import Pagewrapper from "../components/Pagewrapper";
+
 import {
   FaHtml5,
   FaCss3,
@@ -7,12 +8,16 @@ import {
   FaReact,
   FaWordpress,
   FaFigma,
+  FaPython,
+  FaFileExcel,
 } from "react-icons/fa";
 import {
   SiNextdotjs,
   SiFramer,
   SiAdobexd,
   SiAdobephotoshop,
+  SiApache,
+  SiApachespark,
 } from "react-icons/si";
 
 const aboutData = [
@@ -28,25 +33,19 @@ const aboutData = [
           <FaReact />,
           <SiNextdotjs />,
           <SiFramer />,
-          <FaWordpress />,
         ],
+      },
+      {
+        title: "Data science",
+        icons: [<FaPython />, <SiApachespark />, <FaFileExcel />],
       },
       {
         title: "UI/UX Design",
         icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
       },
-    ],
-  },
-  {
-    title: "awards",
-    info: [
       {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
-      },
-      {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
+        title: "web scraping",
+        icons: [<FaPython />],
       },
     ],
   },
@@ -54,12 +53,22 @@ const aboutData = [
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
+        title:
+          "Senior Software Engineer and lead technologist - Dan Energy Research and Development PLC",
+        stage: "2021-2023",
       },
       {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
+        title: "Sofware Engineer - Dan Energy Research and Development PLC",
+        stage: "2021",
+      },
+      {
+        title: "Cloud  Practitioner - Dan Energy Research and Development PLC",
+        stage: "2020",
+      },
+
+      {
+        title: "Web Developer - Plusova Media solution",
+        stage: "2019",
       },
       {
         title: "Intern - DEF Corporation",
@@ -71,16 +80,16 @@ const aboutData = [
     title: "credentials",
     info: [
       {
-        title: "Web Development - ABC University, LA, CA",
+        title: "React Development - Udemy ade BootCamp",
         stage: "2011",
       },
       {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
+        title: "Computer Science Degree - Unity University",
+        stage: "2021",
       },
       {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
+        title: "Certified Cloud practitioner - AWS , Cloud Computing",
+        stage: "2021",
       },
     ],
   },
@@ -92,6 +101,7 @@ import Circles from "../components/Circle";
 import { useState } from "react";
 import { fadeIn } from "@/Variants";
 import CountUp from "react-countup";
+import { BsFileExcel } from "react-icons/bs";
 
 const page = () => {
   const [itemIndex, setItemIndex] = useState(0);
@@ -107,7 +117,7 @@ const page = () => {
           animate="show"
           exit="hidden"
         >
-          <Avatar />
+          {/* <Avatar /> */}
         </motion.div>
         <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 ">
           <div className="flex-1 flex flex-col justify-center ">
@@ -119,8 +129,8 @@ const page = () => {
               animate="show"
               exit="hidden"
             >
-              Captivating <span className="text-accent">stories </span> birth
-              magnificent designs.
+              More than <span className="text-accent">Four </span> <br /> years
+              in the industry.
             </motion.h2>
             <p
               className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 "
@@ -146,7 +156,7 @@ const page = () => {
                   {/* experience */}
                   <div className=" relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:-right-0 ">
                     <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                      <CountUp start={0} end={10} duration={5} /> +
+                      <CountUp start={0} end={4} duration={5} /> +
                     </div>
                   </div>
                   <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
@@ -157,7 +167,7 @@ const page = () => {
                   {/* experience */}
                   <div className=" relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:-right-3">
                     <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                      <CountUp start={0} end={247} duration={5} /> +
+                      <CountUp start={0} end={16} duration={5} /> +
                     </div>
                   </div>
                   <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
@@ -168,30 +178,20 @@ const page = () => {
                   {/* experience */}
                   <div className=" relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:-right-3">
                     <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                      <CountUp start={0} end={650} duration={5} /> +
+                      <CountUp start={0} end={64} duration={5} /> +
                     </div>
                   </div>
                   <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
                     Finished projects
                   </div>
                 </div>
-                <div>
-                  {/* experience */}
-                  <div className=" relative flex-1 ">
-                    <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                      <CountUp start={0} end={8} duration={5} /> +
-                    </div>
-                  </div>
-                  <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
-                    Winning awards
-                  </div>
-                </div>
+                <div></div>
               </div>
             </motion.div>
           </div>
           {/* info */}
           <motion.div
-            className="flex flex-col w-full xl:max-w-[48%] h-[489px]"
+            className="flex flex-col w-full xl:max-w-[50%] h-[489px]"
             variants={fadeIn("left", 0.4)}
             initial="hidden"
             animate="show"

@@ -5,6 +5,7 @@ import ProjectsBtn from "./components/ProjectsBtn";
 import { motion } from "framer-motion";
 import Avatar from "./components/Avatar";
 import ParticleContainer from "./components/ParticleContainer";
+import { TypeAnimation } from "react-type-animation";
 export default function Home() {
   return (
     <Pagewrapper>
@@ -14,14 +15,31 @@ export default function Home() {
           <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto  ">
             {/* title */}
             <motion.h1
-              className="h1"
+              className="h1 font-mono"
               variants={fadeIn("down", 0.2)}
               initial="hidden"
               animate="show"
               exit="hidden"
             >
-              Transorming Ideas <br /> Into{" "}
-              <span className="text-accent">Digital Reality</span>
+              Hi I'm Abenezer Maregu <br />
+              <span className="text-accent font-mono">
+                <TypeAnimation
+                  sequence={[
+                    "Backend Devloper",
+                    3000,
+                    "FrontEnd Devloper",
+                    3000,
+                    "Cloud Engineer",
+                    3000,
+                    "Data analyst",
+                    3000,
+                    "AI enthusiast",
+                  ]}
+                  speed={30}
+                  wrapper="span"
+                  repeat={Infinity}
+                />
+              </span>
             </motion.h1>
             {/* subititle */}
             <motion.p
@@ -56,7 +74,7 @@ export default function Home() {
           {/* bg-imate */}
           <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"></div>
           {/* particles */}
-          {/* <ParticleContainer /> */}
+          <ParticleContainer />
           {/* avatar */}
           <motion.div
             className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:right-[8%] lg:bottom-0"

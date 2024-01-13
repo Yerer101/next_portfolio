@@ -21,7 +21,7 @@ const page = () => {
                 initial="hidden"
                 animate="show"
                 exit={"hidden"}
-                className="h2 xl:mt-8"
+                className="h2 xl:mt-8 font-mono"
               >
                 My services <span className="text-accent">.</span>
               </motion.h2>
@@ -32,8 +32,7 @@ const page = () => {
                 exit={"hidden"}
                 className="mb-4 max-w-[400px] mx-auto lg:mx-0"
               >
-                Lorem ipsum dolor sit, amet monsectetur adiisicing elit. A
-                preveniet dignissimos distincitio tempore harum ladantum.
+                This are some of the service i give a a full stack devloper creating your impecabel online precence to elevate your bussiness
               </motion.p>
             </div>
             <motion.div
