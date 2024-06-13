@@ -15,32 +15,31 @@ import {
   RiGoogleLine,
   RiDiscordFill,
 } from "react-icons/ri";
+
 const Socials = () => {
   return (
     <div className="flex items-center gap-x-5 text-lg">
       <Link
-        href={"https://discord.com/channels/@me/1138909093092917249"}
+        href={"https://t.me/o_fact?text=Hello%20Abraham"}
         target="_blank"
         className="hover:text-accent transition-all duration-300"
       >
-        <RiDiscordFill />
+        <RiTelegramFill size={30} />
       </Link>
       <Link
-        href={"https://github.com/Drabsenior"}
+        href={"https://github.com/Yerer101"}
         target="_blank"
         className="hover:text-accent transition-all duration-300"
       >
-        <RiGithubFill />
+        <RiGithubFill size={30} />
       </Link>
       <Link
-        href={"https://www.linkedin.com/in/abenezer-maregu-560016236/"}
+        href={"https://linkedin.com/in/abraham-tekeste-054a01285"}
         target="_blank"
         className="hover:text-accent transition-all duration-300"
       >
-        <RiLinkedinFill />
+        <RiLinkedinFill size={30} />
       </Link>
-     
-      
     </div>
   );
 };

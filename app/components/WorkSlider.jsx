@@ -19,7 +19,7 @@ const workSlides = {
           title: "title",
           path: "/thumb4.jpg",
           source: "",
-          link: "https://kezyasv2.onrender.com/",
+          link: "https://kezyas.com/",
         },
         {
           title: "title",
@@ -70,12 +70,20 @@ const WorkSlider = () => {
                       {/* overlay gradient */}
                       <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-70 transition-all duration-700"></div>
                       {/* links to source and web */}
-                      <Link href={image.source ? image.source : ""} target="_blank" rel="noopener noreferrer">
+                      <Link
+                        href={image.source ? image.source : ""}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <h2 className="absolute bottom-2 cursor-pointer   right-4 duration-700 tracking-wide font-mono  hover:text-red-600 hover:scale-125 hover:font-bold transition-all ">
                           Source
                         </h2>
                       </Link>
-                      <Link href={image.link ? image.link : ""} target="_blank" rel="noopener noreferrer">
+                      <Link
+                        href={image.link ? image.link : ""}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <h2 className="absolute bottom-2 right-24 duration-300 tracking-widest font-mono  hover:text-red-600 hover:scale-125 hover:font-bold transition-all">
                           Link
                         </h2>

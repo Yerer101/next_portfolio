@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Socials from "./Socials";
+
 const Header = () => {
   return (
     <header className="absolute z-30 w-full flex items-center px-16 xl:px-0 xl:h-[90px]">
@@ -14,7 +15,7 @@ const Header = () => {
               alt=""
               priority={true}
             /> */}
-            <h2 className="font-mono text-2xl font-semibold">@abenimaru</h2>
+            <h2 className="font-mono text-2xl font-semibold">@abraham</h2>
           </Link>
           {/* soicals */}
           <Socials />

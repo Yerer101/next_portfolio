@@ -4,19 +4,21 @@ import Nav from "./components/Nav";
 import TopLeftImg from "./components/TopLeftImg";
 import "./globals.css";
 import { Sora } from "next/font/google";
+
 const sora = Sora({
   subsets: ["latin"],
   variable: "--font-sora",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
 });
+
 export const metadata = {
-  title: "Abenezer Maregu",
-  description: "This is Abenezer maregu portfolio website he is a fullstack webdeveloper",
+  title: "Abraham Tekeste",
+  description:
+    "This is portfolio website showcasing ABraham Tekeste Skill set!!",
   icons: {
-    icon: 'favicon.png', // /public path
+    icon: "favicon.png", // /public path
   },
 };
-
 
 export default function RootLayout({ children }) {
   return (
@@ -27,7 +29,7 @@ export default function RootLayout({ children }) {
         <TopLeftImg />
         <Nav />
         <Header />
-        <div className="">{children}</div>
+        <div className="bg-[#ff] ">{children}</div>
       </body>
     </html>
   );

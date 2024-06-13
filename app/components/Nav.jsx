@@ -18,11 +18,7 @@ export const navData = [
   { name: "services", path: "/services", icon: <HiRectangleGroup /> },
   { name: "address", path: "/address", icon: <FaAddressBook /> },
   { name: "work", path: "/work", icon: <HiViewColumns /> },
-  {
-    name: "contact",
-    path: "/contact",
-    icon: <HiEnvelope />,
-  },
+  { name: "contact", path: "/contact", icon: <HiEnvelope /> },
 ];
 
 const Nav = () => {

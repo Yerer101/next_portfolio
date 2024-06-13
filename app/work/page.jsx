@@ -34,7 +34,8 @@ const page = () => {
                 exit={"hidden"}
                 className="mb-4 max-w-[400px] mx-auto lg:mx-0"
               >
-                This is some of the projects i work on and participate in as a team over the years
+                This is some of the projects i work on and participate in as a
+                team over the years
               </motion.p>
             </div>
             <motion.div
