@@ -37,15 +37,23 @@ const aboutData = [
       },
       {
         title: "Data science",
-        icons: [<FaPython key='python' />, <SiApachespark key='apache'/>, <FaFileExcel key='excel'/>],
+        icons: [
+          <FaPython key="python" />,
+          <SiApachespark key="apache" />,
+          <FaFileExcel key="excel" />,
+        ],
       },
       {
         title: "UI/UX Design",
-        icons: [<FaFigma key='figma'/>, <SiAdobexd key='adobe'/>, <SiAdobephotoshop key='adphoto' />],
+        icons: [
+          <FaFigma key="figma" />,
+          <SiAdobexd key="adobe" />,
+          <SiAdobephotoshop key="adphoto" />,
+        ],
       },
       {
         title: "web scraping",
-        icons: [<FaPython key='fapython'/>],
+        icons: [<FaPython key="fapython" />],
       },
     ],
   },
@@ -102,6 +110,7 @@ import { useState } from "react";
 import { fadeIn } from "@/Variants";
 import CountUp from "react-countup";
 import { BsFileExcel } from "react-icons/bs";
+import Bulb from "../components/Bulb";
 
 const Page = () => {
   const [itemIndex, setItemIndex] = useState(0);
@@ -109,16 +118,17 @@ const Page = () => {
     <Pagewrapper>
       <div className="h-[120vh] bg-primary/30 py-32  text-center xl:text-left">
         <Circles />
+        <Bulb />
         {/* avatar image */}
-        <motion.div
+        {/* <motion.div
           className="hidden xl:flex absolute bottom-0 -left-[370px] "
           variants={fadeIn("right", 0.2)}
           initial="hidden"
           animate="show"
           exit="hidden"
         >
-          {/* <Avatar /> */}
-        </motion.div>
+          <Avatar />
+        </motion.div> */}
         <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 ">
           <div className="flex-1 flex flex-col justify-center ">
             {/* text */}
@@ -140,8 +150,9 @@ const Page = () => {
               exit="hidden"
             >
               10 years agao, I began freelancing as a developer. Since then,
-              I&apos;ve done remote work for agencies, counsulted for startups, and
-              collaborated on digital products for business and consumer use.
+              I&apos;ve done remote work for agencies, counsulted for startups,
+              and collaborated on digital products for business and consumer
+              use.
             </p>
             {/* counters */}
             <motion.div
